@@ -7,10 +7,8 @@ deploy:
   local_dir: exists
   upload-dir: test 
   acl: public_read
-  # Only perform deploy step if a gulp deploy ran
   on:
-    tags: true
-    condition: -d exists
+    condition: "-d exists"
 
 branches:
   only:
