@@ -12,7 +12,7 @@ deploy:
   upload-dir: test 
   acl: public_read
   on:
-    condition: "-d exists"
+    condition: -d notexists
 
 branches:
   only:
