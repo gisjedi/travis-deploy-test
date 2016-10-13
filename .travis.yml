@@ -10,7 +10,7 @@ deploy:
   # Only perform deploy step if a gulp deploy ran
   on:
     tags: true
-    condition: "-d notexists"
+    condition: -d notexists
 
 branches:
   only:
